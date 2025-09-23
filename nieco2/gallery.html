@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Colin Bratwill</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CB</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="logs.html">Storm Logs</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200" alt="Storm 1">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200" alt="Storm 2">
+      <img src="https://images.unsplash.com/photo-1526403224742-1f6c9f0c6f6b?q=80&w=1200" alt="Storm 3">
+      <img src="https://images.unsplash.com/photo-1501967100453-1b6f3c9b8f20?q=80&w=1200" alt="Storm 4">
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Colin Bratwill — Tornado Hunter</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
