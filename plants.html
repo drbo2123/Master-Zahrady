@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Encyklopédia rastlín – Majster záhrady</title>
+<link rel="icon" href="favicon.svg" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="plants">
+<header class="site-header">
+<a class="logo" href="index.html"><span class="logo-mark">🌱</span><span class="logo-text">Majster záhrady</span></a>
+<nav class="site-nav">
+<a href="plants.html" aria-current="page">Encyklopédia</a>
+<a href="tips.html">Sezónne tipy</a>
+<a href="planner.html">Plánovač</a>
+<a href="quiz.html">Kvíz</a>
+</nav>
+<div class="controls">
+<button class="btn ghost" id="themeToggle" aria-pressed="false">🌓</button>
+<button class="btn ghost" id="accentCycle">🎨</button>
+</div>
+</header>
+
+
+<main class="container">
+<header class="page-head">
+<h1>Encyklopédia rastlín</h1>
+<p>Filtrovanie podľa svetla, vody a náročnosti. Vyhľadávanie funguje v reálnom čase.</p>
+</header>
+
+
+<section class="filters" aria-label="Filtre rastlín">
+<input id="plantSearch" class="input" type="search" placeholder="Hľadaj názov, latinský názov alebo tagy…" />
+<div class="filter-row">
+<select id="filterSun" class="select" aria-label="Filter slnko">
+<option value="">Svetlo (všetko)</option>
+<option value="slnečné">Slnečné</option>
+<option value="polotieň">Polotieň</option>
+<option value="tieň">Tieň</option>
+</select>
+<select id="filterWater" class="select" aria-label="Filter zálievka">
+<option value="">Zálievka (všetko)</option>
+<option value="nízka">Nízka</option>
+<option value="stredná">Stredná</option>
+<option value="vysoká">Vysoká</option>
+</select>
+<select id="filterDifficulty" class="select" aria-label="Filter náročnosť">
+<option value="">Náročnosť (všetko)</option>
+<option value="ľahká">Ľahká</option>
+<option value="stredná">Stredná</option>
+<option value="náročná">Náročná</option>
+</select>
+<button id="resetFilters" class="btn">Reset</button>
+</div>
+</section>
+
+
+<section id="plantList" class="cards-grid" aria-live="polite"></section>
+</main>
+
+
+<footer class="site-footer"><p>© <span id="year"></span> Majster záhrady</p></footer>
+
+
+<script src="assets/data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

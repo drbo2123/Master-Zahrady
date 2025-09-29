@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kvíz – Majster záhrady</title>
+<link rel="icon" href="favicon.svg" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="quiz">
+<header class="site-header">
+<a class="logo" href="index.html"><span class="logo-mark">🌱</span><span class="logo-text">Majster záhrady</span></a>
+<nav class="site-nav">
+<a href="plants.html">Encyklopédia</a>
+<a href="tips.html">Sezónne tipy</a>
+<a href="planner.html">Plánovač</a>
+<a href="quiz.html" aria-current="page">Kvíz</a>
+</nav>
+<div class="controls">
+<button class="btn ghost" id="themeToggle">🌓</button>
+<button class="btn ghost" id="accentCycle">🎨</button>
+</div>
+</header>
+
+
+<main class="container">
+<header class="page-head">
+<h1>Kvíz: Čo vieš o záhrade?</h1>
+<p>Krátky zábavný test – výsledok hneď, s vysvetlením správnych odpovedí.</p>
+</header>
+
+
+<section id="quizContainer" class="quiz"></section>
+<div class="quiz-actions">
+<button id="startQuiz" class="btn primary">Začať kvíz</button>
+<button id="restartQuiz" class="btn" hidden>Znova</button>
+</div>
+</main>
+
+
+<footer class="site-footer"><p>© <span id="year"></span> Majster záhrady</p></footer>
+
+
+<script src="assets/data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
