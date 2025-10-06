@@ -1,7 +1,21 @@
-:root{
-/* Dark theme */
-:root[data-theme="dark"]{
---bg:#0c0d0f; --text:#f3f4f6; --muted:#9ca3af; --black:#000; --white:#fff;
+/* Svetlá téma - základné premenné */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #6b7280;
+  --black: #000000;
+  --white: #ffffff;
+  /* ďalšie premenné... */
+}
+
+/* Tmavá téma */
+:root[data-theme="dark"] {
+  --bg: #0c0d0f;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --black: #000000;
+  --white: #ffffff;
+  /* ďalšie premenné na tmavú tému */
 }
 
 
@@ -108,3 +122,4 @@ background:var(--bg); color:var(--text); line-height:1.6;
 /* Focus outline for key users */
 
 :focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+
